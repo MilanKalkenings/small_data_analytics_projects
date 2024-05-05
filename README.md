@@ -1,6 +1,15 @@
 # small_data_analytics_projects
 various data science notebooks 
 
+# wikidata names
+- fetch names from wikidata
+- split them into clean forenames and last names
+- clustering forename embeddings allows to infer genders
+
+![name_clusters](https://github.com/MilanKalkenings/small_data_analytics_projects/assets/70267800/6bac44a6-42d0-4d74-bddb-71c068d650ef)
+
+
+
 # apriori
 - one of my first projects ever 
 - naive implementation of apriori for frequent set mining on health data
