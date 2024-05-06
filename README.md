@@ -1,6 +1,16 @@
 # small_data_analytics_projects
 various data science notebooks 
 
+
+# edgecase sampling
+- selecting top k most differenct vectors often fails at finding a versatile set of edgecases
+- instead: iteratively select most distant data point and discard vectors that point to similar direction from future considerations
+- method can be repeated, without reconsidering sampled data points to sample data points after all data points are discarded
+- generalizable to high dimensional space
+
+ ![sampling](https://github.com/MilanKalkenings/small_data_analytics_projects/assets/70267800/a662507a-7297-4faf-892c-3f43db3f2cfb)
+
+
 # wikidata names
 - fetch names from wikidata
 - split them into clean forenames and last names
