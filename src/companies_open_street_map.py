@@ -9,7 +9,7 @@ def concat(row: pd.Series):
         return values[0]
     return "; ".join(values)[:-1]
 
-
+# see rate limits: https://dev.overpass-api.de/overpass-doc/en/preface/commons.html
 # fetch all car repair shops located in germany & save them in df
 api = overpass.API()
 query = f"""
