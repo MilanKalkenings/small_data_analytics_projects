@@ -13,7 +13,7 @@ def concat(row: pd.Series):
 # fetch all car repair shops located in germany & save them in df
 api = overpass.API()
 query = f"""
-area["ISO3166-1"="DE"][admin_level=2];( node["shop"="car_repair"](area);
+area["ISO3166-1"="DE"][admin_level=2];( node["shop"="mobile_phone"](area);
 way["shop"="car_repair"](area);
 rel["shop"="car_repair"](area);
 );
