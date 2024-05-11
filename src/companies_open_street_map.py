@@ -1,3 +1,8 @@
+"""
+- based on data from open street map https://www.openstreetmap.org/#map=4/48.25/11.29
+- provided under Open Data Commons Open Database License (ODbL) v1.0 (https://opendatacommons.org/licenses/odbl/1-0/)
+"""
+
 import pandas as pd
 import overpass
 
@@ -14,8 +19,8 @@ def concat(row: pd.Series):
 api = overpass.API()
 query = f"""
 area["ISO3166-1"="DE"][admin_level=2];( node["shop"="mobile_phone"](area);
-way["shop"="car_repair"](area);
-rel["shop"="car_repair"](area);
+way["shop"="mobile_phone"](area);
+rel["shop"="mobile_phone"](area);
 );
 out center;
 """
