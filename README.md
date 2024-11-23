@@ -29,10 +29,12 @@ various data science notebooks
 
 
 ## apriori
-- one of my first projects ever 
-- naive implementation of apriori for frequent set mining on health data
-
-<img width="359" alt="apriori" src="https://github.com/MilanKalkenings/small_data_analytics_projects/assets/70267800/e25186f6-b721-4a3c-8783-29ed0013db0c">
+- association rule: 
+    - support: how often do "antecedents" and "consequents" occur together?
+    - confidence: how often do "antecedents" imply "consequents"?
+- only "frequent item sets" are considered to be "antecedents" or "consequents"
+- "frequent item sets" are itemsets that occur in at least <freq_itemset_min_support> * len(<transactions>) transactions
+- <freq_itemset_min_support>: set to high value for better runtime and overview
 
 ## data cleaning
 - one of my first projects ever
