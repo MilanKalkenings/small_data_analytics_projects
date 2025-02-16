@@ -1,6 +1,15 @@
 # small_data_analytics_projects
 various data science notebooks 
 
+
+## Benchmark Weak Labelers
+given labels and the ids of labelers with trusty positive labels and the ids of labelers with trusty negative labels, 
+this tool estimates ground truth labels and provides metrics for estimating the reliability of the labelers.
+In many use cases, some labelers are known to be more trustworthy, while the performance of others is unknown.
+This is especially the case if some labels are costly assigned by human annotators and others by cheap heuristics.
+Due to vast amounts of data to be labeled, even manually evaluating labels provdied by all labelers can be out of scope. 
+Goal of this micro project is to provide a practical heuristic for a heuristic initial evaluation of labelers.
+
 ## string quality
 - overview for string columns in pandas dataframes for initial EDA results
     - contained types, null values, uniques 
